@@ -1,6 +1,9 @@
 <template>
   <div>
-    
+    <body></body>
+    <footer>
+      
+    </footer>
   </div>
 </template>
 
@@ -8,5 +11,5 @@
 export default {};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>

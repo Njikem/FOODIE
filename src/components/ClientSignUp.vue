@@ -30,6 +30,7 @@
 import axios from 'axios';
 import cookies from 'vue-cookies';
 
+
     export default {
         methods: {
             click_sign: function(){
@@ -52,7 +53,7 @@ import cookies from 'vue-cookies';
                     
                 //Making the success and the error request
                 }).then((response) => {
-                    cookies.set('client_id', response['data']['client_id']);
+                cookies.set('client_id', response['data']['client_id']);
                     cookies.set('token', response['data']['token']);
 
                 }).catch((error) => {

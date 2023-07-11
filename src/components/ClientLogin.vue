@@ -30,7 +30,7 @@ import cookies from 'vue-cookies';
             method:'POST',
             data: {
                 email: this.$refs['email_input'].value,
-                password: this.$refs['password_input'].value
+                password: this.$refs['password_input'].value,
             }
 
         }).then((response) => {

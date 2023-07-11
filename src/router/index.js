@@ -1,14 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '@/views/HomePage.vue'
-import AboutPage from '@/views/AboutPage.vue'
 import MenuPage from '@/views/MenuPage.vue'
 import LoginPage from '@/views/LoginPage.vue'
 import SignUpPage from '@/views/SignUpPage.vue'
 import FooterPage from '@/views/FooterPage.vue'
 import ClientProfilePage from '@/views/ClientProfilePage.vue'
-import RestaurantPage from '@/views/RestaurantPage.vue'
-
+import RestaurantSignUpPage from '@/views/RestaurantSignUpPage.vue'
+import RestaurantLoginPage from '@/views/RestaurantLoginPage.vue'
+import RestaurantProfilePage from '@/views/RestaurantProfilePage.vue'
+import RestaurantHomePage from '@/views/RestaurantHomePage.vue'
+import OrderPage from '@/views/OrderPage.vue'
 
 
 
@@ -24,33 +26,14 @@ const routes = [
         title: 'HomePage',
       },
       {
-        name: 'description',
+        name: 'HomePage',
         content: 'This is the home page'
       },
     ]
   },
 
-
   {
-    path: '/',
-    component: AboutPage,
-    Meta: [
-
-      {
-        title: 'AboutPage',
-      },
-      {
-        name: 'description',
-        component: 'This is my about page',
-      },
-
-    ]
-
-
-  },
-
-  {
-    path: '/',
+    path: '/Menu',
     component: MenuPage,
 
     Meta: [
@@ -127,7 +110,7 @@ const routes = [
 
   {
     path: '/Restaurant',
-    component: RestaurantPage,
+    component: RestaurantSignUpPage,
 
     meta: [
       {
@@ -141,9 +124,71 @@ const routes = [
 
     ]
 
-  }
+  },
+
+  {
+  path: '/RestLogin',
+  component: RestaurantLoginPage,
+
+  meta: [
+    {
+    title: 'RestaurantPage',
+    },
+    {
+      name: 'RestaurantLoginPage',
+      component: 'This is my restaurant page'
+    },
+  ]
+
+  },
+
+  {
+    path: '/RestProfile',
+    component: RestaurantProfilePage,
+  
+    meta: [
+      {
+      title: 'RestaurantPage',
+      },
+      {
+        name: 'RestaurantProfilePage',
+        component: 'This is my restaurant profile page'
+      },
+    ]
+  
+    },
+    {
+    path: '/RestHomePage',
+    component: RestaurantHomePage,
+  
+    meta: [
+      {
+      title: 'RestaurantHomePage',
+      },
+      {
+        name: 'RestaurantHomePage',
+        component: 'This is my restaurant home page'
+      },
+    ]
+  
+    },
 
 
+    {
+      path: '/OrderPage',
+      component: OrderPage,
+    
+      meta: [
+        {
+        title: 'OrderPage',
+        },
+        {
+          name: 'OrderPage',
+          component: 'This is my rder page'
+        },
+      ]
+    
+      },
 
 ]
 

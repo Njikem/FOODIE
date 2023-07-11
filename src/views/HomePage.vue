@@ -56,8 +56,11 @@
     <router-link to="/SignUp">Go SignUp</router-link>
     <router-link to="/">Go Home</router-link>
     <router-link to="/ClientProfile">ClientProfile</router-link>
-    <router-link to="/Restaurant">Restaurant</router-link>
-
+    <router-link to="/Restaurant">RestaurantSignup</router-link>
+      <router-link to="/RestLogin">RestLogin</router-link>
+      <router-link to="/RestProfile">RestProfile</router-link>
+    <router-link to="/Menu">Menu</router-link>
+    <router-link to="/Order">Order</router-link>
     </footer>
   </div>
 </template>
